@@ -1,6 +1,6 @@
-# 📊 Vendor Performance Analysis | Inventory and sales
+# Vendor Performance Analysis | Inventory and sales
 
-## 📌 One-Line Objective
+## Objective
 Analyzed vendors and inventory performance to identify profitability drivers, strategic purchasing, inventory decision and optimization opportunities using SQL, Python, and data visualization.
 
 ----------
