@@ -45,16 +45,28 @@ Effective inventory and sales management are critical in the retail sector. This
 
 <h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
-- **Type:** Retail & Wholesale Transactional Data  
-- **Records:** ~10,000+ rows  
-- **Key Fields:**  
-  - Vendor details  
-  - Brand information  
-  - Purchase price & quantity  
-  - Sales price & quantity
-  - Freight cost  
-  - Gross profit & profit margin  
-- **Source:** Provided as CSV files (stored in the `/data` directory)
+The analysis is based on a curated dataset named **`vendor_sales_summary`**, which was derived from a much larger raw dataset. The original data contained **over 10 million (1 crore+) rows**, making it impractical to upload or analyze directly within this repository.
+
+After data processing and aggregation, only the most relevant and analysis-ready dataset was retained.
+
+### Dataset Overview
+- **Rows:** 10,693  
+- **Columns:** 18  
+- **Granularity:** Vendor- and brand-level performance summary  
+
+### Key Columns Included
+The dataset captures critical metrics related to vendor performance, sales, purchasing, and inventory efficiency, including:
+- Vendor and brand identifiers  
+- Purchase and selling prices  
+- Sales and purchase quantities and values  
+- Freight and excise costs  
+- Gross profit and profit margin  
+- Inventory turnover and sales-to-purchase ratios  
+
+### Why This Dataset Was Used
+This summarized dataset represents the **most meaningful and actionable output** of the data pipeline. It enables efficient exploratory analysis, profitability comparison, inventory assessment, and statistical validation, while avoiding the performance and storage challenges associated with extremely large raw datasets.
+
+The full raw dataset was intentionally excluded from the repository due to its size and limited incremental value for analytical insights.
 
 ----------
 
@@ -68,8 +80,6 @@ Effective inventory and sales management are critical in the retail sector. This
 ----------
 
 <h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning & Preparation</h2>
-
-## Data Cleaning & Preparation
 
 To ensure reliable analysis, the dataset was filtered to remove non-representative records:
 
